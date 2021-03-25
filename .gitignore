@@ -6,7 +6,7 @@ docs/
 serpent.so
 serpent.dylib
 serpent.dll
-serpent.a
+libserpent*.a
 serpent.lib
 serpent-test-*
 *.exe
