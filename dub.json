@@ -1,48 +1,10 @@
 {
 	"authors": [
-		"Lispy Snake, Ltd."
+		"Lispy Snake Authors"
 	],
-	"copyright": "Copyright © 2019-2020 Lispy Snake, Ltd.",
-	"dependencies": {
-		"bindbc-bgfx": {
-			"path": "external/bindbc-bgfx",
-		},
-		"bindbc-loader": {
-			"path": "external/bindbc-loader",
-		},
-		"bindbc-sdl": {
-			"path": "external/bindbc-sdl",
-		},
-		"intel-intrinsics": {
-			"path": "external/intel-intrinsics",
-		},
-		"gfm": {
-			"path": "external/gfm",
-		}
-	},
-	"description": "Serpent Core Game Framework",
-	"libs-posix": [
-		"SDL2", "SDL2_image",
-		"bgfxRelease", "bimgRelease", "bxRelease",
-		"stdc++", "GL", "x11",
-	],
-	"libs-windows": [
-		"SDL2", "SDL2_image",
-		"bgfxRelease", "bimgRelease", "bxRelease",
-	],
-	"lflags": ["-L../serpent-support/runtime/lib"],
+	"copyright": "Copyright © 2019-2021 Lispy Snake, Ltd.",
+	"description": "Serpent ECS",
 	"license": "ZLib",
-	"name": "serpent",
-	"subConfigurations": {
-		"bindbc-bgfx": "staticBC",
-		"bindbc-sdl": "staticBC"
-	},
+	"name": "serpent-ecs",
 	"targetType": "library",
-	"versions": [
-		"SDL_Static",
-		"SDL_Image",
-		"SDL_205",
-	],
-	"preBuildCommands": ["ldc2 --run scripts/prepare-shaders.d"],
-	"stringImportPaths": ["built/shaders"],
 }
